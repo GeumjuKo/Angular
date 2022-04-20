@@ -1,0 +1,29 @@
+#remote {
+  background-color:#333;
+  border-style: outset;
+  border-color: #333;
+  border-width: 7px;
+  border-radius: 30px;
+  width: 250px;
+  height: 500px;
+}
+
+.buttons{
+  margin: -500px 0px;
+}
+
+#powerButton{ 
+  color: rgb(52, 230, 185);
+  font-size: 60px;
+  background: transparent;
+  border-style: hidden;
+  margin-left:50px
+}
+
+#connectionSocket{
+  color: rgb(52, 230, 185);
+  font-size: 60px;
+  background: transparent;
+  border-style: hidden;
+  margin-left:30px
+}

@@ -1,0 +1,120 @@
+:root{
+  --mq-xs: (320px)
+  --mq-sm: (480px)
+  --mq-md: (720px)
+  --mq-lg: (1000px)
+  /* --max-width : (55%) */
+}
+
+/* Border Box */
+* {
+  box-sizing: border-box;
+}
+/* Font */
+body {
+  font-family: Roboto;
+  /* margin: 0px; */
+}
+
+.post{
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  max-width: 55%;
+  min-width: 50%;
+  z-index: 2;
+  
+}
+.title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0px;
+  padding:10px;
+  /* padding-bottom: 10px; */
+  background:rgb(1, 98, 179) ;
+  min-width: var(--mq-sm);
+  font-size: 165%;
+  font-weight: bold;
+  line-height: 1.2rem;
+  color: rgb(255, 255, 255);
+  border-radius: 10px 10px 0px 0px;
+}
+.category {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+  font-size: 0.8rem;
+  min-width: var(--mq-sm);
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+}
+.post_info {
+  background: rgba(129, 192, 235, 0.3);
+  border:  1px solid rgba(136, 177, 255, 0.2);
+  padding: 5px;
+  min-width: var(--mq-lg);
+  height: 30px;
+  text-align: right;
+  font-size: 75%;
+  font-weight: bold;
+  color: rgb(0, 43, 77);
+}
+
+.post_contents {
+  background: rgba(208, 225, 255, 0.15);
+  border:  1px solid rgba(136, 177, 255, 0.2);
+  /* border-top: 0; */
+  padding: 6px;
+  min-width: var(--mq-lg);
+  height: 315px;
+  display: block;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.post_article {
+    font-size: 14px;
+    line-height: 18px;
+    /* margin-bottom: 15px; */
+    margin-left: 20px;
+    width: 50%;
+    max-width: 100%;
+    min-width: 0%;
+    float: left;
+}
+
+.post_image {
+    /* display: block; */
+    float: left;
+    max-width: 50%;
+    min-width: 0%;
+    /* margin-bottom: 10px; */
+}
+
+.diagnosis{
+  border:  2px solid rgba(122, 195, 255, 0.1);
+  background: rgba(164, 219, 255, 0.15);
+  padding: 3px;
+  margin: 10px auto;
+  color: #002b4d;
+  font-weight: bold;
+  font-size: 12.5px;
+  border-radius: 10px;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
+.comments{
+  background: rgba(208, 225, 255, 0.15);
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  max-width: 55%;
+  z-index: 2;
+  border:   1px solid rgba(136, 177, 255, 0.2);
+  border-radius: 10px;
+}

@@ -1,0 +1,30 @@
+<iframe id = "remote">
+</iframe>
+
+<div class ="buttons">
+  <!-- <button type ="button" id="powerButton" (click)="tv.play('Play')"> -->
+    <!-- 방법1. model 에서 TVComponent method 바로 호출 -->
+   <!-- ●(1) -->
+  <!-- </button> -->
+  <!-- <br/> -->
+  <!-- <button type ="button" id="powerButton" (click)="changeChannel('Play')"> -->
+    <!-- 방법2. RemoteComponent 에서 TVComponent method 바로 호출 -->
+    <!-- ●(2) -->
+  <!-- </button> -->
+  <!-- <br/> -->
+  <button type ="button" id="powerButton" (click)="getVideo()"><!-- 방법3. event emitter 로 처리 -->
+    ●
+  </button>
+  <button type ="button" id="connectionSocket" (click)="connectWS()">
+    ●
+  </button>
+</div>
+
+
+<!-- <ul class="videos">
+  <li *ngFor="let vidID of videos;">
+    <a routerLink="/Video">
+      {{vidID._id}}
+    </a>
+  </li>
+</ul> -->

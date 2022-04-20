@@ -1,0 +1,23 @@
+
+<div class = "tv_screen">
+    <!-- <iframe id = "player" width="560" height="315" src="https://www.youtube.com/embed/uBY1AoiF5Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
+    </iframe> -->
+    <!-- <app-tv [videoId]="videoId"></app-tv> -->
+    <youtube-player 
+      [videoId]="videoId"
+      [playerVars]="playerConfig"
+    ></youtube-player>
+</div>
+
+<div class ="buttons">
+  <button id="powerButton" type ="button" onclick ="alert('click')">
+    ●
+  </button>
+</div>
+
+<!-- Message: {{childMessage}} -->
+
+<!-- function playVideo() {
+  var iframe = $("#video");
+  iframe.attr("src", iframe.data("src"))
+} -->

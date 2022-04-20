@@ -1,0 +1,75 @@
+{"post_id": {
+      "S": "0",
+    "post":{
+      "category":{
+        "S": "CATEGORY"
+        },
+      "title":{
+          "S": "title example"
+      },
+      "writer":{
+        "S": "홍길동"
+      },
+      "date":{
+        "S": "2022-00-00 00:00:00"
+      },
+      "views":{
+        "N": "10"
+      },
+      "diagnosis":{
+        "S": "어쩌구어쩌구 병"
+      },
+      "contents" :{
+        "S" : "CONTENTS"
+      }
+    },
+    "comments": {
+      "M": {
+        "write_time": {
+          "S": ""
+        },
+        "text": {
+          "S": "이것은 종양입니다."
+        },
+        "edit_time": {
+          "S": ""
+        },
+        "user": {
+          "M": {
+            "name": {
+              "S": "이광수"
+            },
+            "id": {
+              "S": "gslee"
+            }
+          }
+        },
+        "like": {
+          "N": "9999"
+        },
+        "dislike": {
+          "N": "1"
+        }
+      }
+    },
+    "user": {
+      "M": {
+        "name": {
+          "S": "문성공"
+        },
+        "id": {
+          "S": "\bmsg"
+        },
+        "dicom_id": {
+          "S": "msg.dicom88"
+        },
+        "gender": {
+          "S": "male"
+        },
+        "age": {
+          "N": "0"
+        }
+      }
+    }
+  }
+}

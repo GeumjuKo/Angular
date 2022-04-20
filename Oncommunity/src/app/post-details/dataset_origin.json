@@ -1,0 +1,55 @@
+{"post_id": {
+      "S": "0"
+    },
+    "comments": {
+      "M": {
+        "write_time": {
+          "S": ""
+        },
+        "text": {
+          "S": "이것은 종양입니다."
+        },
+        "edit_time": {
+          "S": ""
+        },
+        "user": {
+          "M": {
+            "name": {
+              "S": "이광수"
+            },
+            "id": {
+              "S": "gslee"
+            }
+          }
+        },
+        "like": {
+          "N": "9999"
+        },
+        "dislike": {
+          "N": "1"
+        }
+      }
+    },
+    "user": {
+      "M": {
+        "name": {
+          "S": "문성공"
+        },
+        "id": {
+          "S": "\bmsg"
+        },
+        "dicom_id": {
+          "S": "msg.dicom88"
+        },
+        "gender": {
+          "S": "male"
+        },
+        "age": {
+          "N": "0"
+        }
+      }
+    },
+    "description": {
+      "S": "테스트 게시글 입니다."
+    }
+  }

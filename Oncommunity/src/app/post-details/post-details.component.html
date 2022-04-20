@@ -1,0 +1,32 @@
+<div class = "post">
+  <div class ="post_title">
+     <!-- 삭제 / 수정 ( 오른쪽 상단 )-->
+    <h2 class="title"><span class="category">{{category}}</span> {{title}}</h2>
+  </div>
+
+  <div class ="post_info">
+    <!-- 작성자 / 작성시간 / 조회수 ( 오른쪽 정렬 ) -->
+    {{writer}} | {{date}} | 조회수 : {{views}}
+  </div>
+
+  <div class= "post_contents">
+    <div class ="post_image">
+      <img alt="CT image" src="assets/image/ct1.jpg">
+    </div>
+
+    <div class ="post_article">
+      <div class = "diagnosis">
+        진단명 : {{diagnosis}}
+      </div>
+      <div class = "글">
+        {{contents}}
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+
+<div class = "comments">
+  <app-comment-details></app-comment-details>
+</div>
