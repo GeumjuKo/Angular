@@ -1,0 +1,21 @@
+<div class = "comments">
+  <div class ="comment_info"> 
+    <!-- 작성자 / 작성시간 / 삭제 / 수정 / 추천 버튼 -->
+    <div class ="writer">
+      {{id}} ({{name}})
+    </div>
+    <div class ="info">
+        {{edit_time}} | <button><i class="fi fi-rr-cross-small"> delete</i></button> 
+        | <button><i class="fi fi-rr-pencil"> edit</i></button> | 
+        <button><i class="fi fi-rr-thumbs-up"> {{like}} </i></button>
+        <button><i class="fi fi-rr-thumbs-down"> {{dislike}} </i></button>
+    </div>
+  </div>
+  <div class = "comment_contents">
+    {{text}}
+  </div>
+</div>
+
+<!--
+  002b4d
+-->

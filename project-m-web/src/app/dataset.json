@@ -1,0 +1,28 @@
+{
+"post_id": "0",
+"category" : "category",
+"title" : "title example",
+"date" : "2022-00-00 00:00:00",
+"views" : 10,
+"diagnosis" : "어쩌고 병",
+"contents" : "어쩌고 어쩌고 blah blah",
+"comment": {
+    "write_time": "",
+    "text":"이것은 종양입니다.",
+    "edit_time": "2022-01-01 11:11:00",
+    "user": {
+      "name":"이광수",
+      "id":"gslee"
+    },
+  "like": 9999,
+  "dislike":1
+  },
+"user": {
+
+    "name": "문성공",
+    "id": "\bmsg",
+    "dicom_id":"msg.dicom88",
+    "gender": "male",
+    "age":0
+}
+}
