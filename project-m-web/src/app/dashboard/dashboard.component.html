@@ -1,0 +1,50 @@
+<!-- <h1>로그인 성공! 환영합니다 ! {{ userName }}</h1> -->
+
+  <button class="signout_btn" (click)="onLogout()"><i class="fi fi-bs-sign-out-alt"> SIGN OUT</i></button>
+
+<!-- <button (click)="getPostList()">Get Post List</button> -->
+  <div class = "header">
+      <!-- 사진추가 -->
+    <div class = "header_cover_img">
+      <!-- <div class ="cover_img">
+        <button class="cover_img_plus_button">+</button>
+      </div> -->
+      <img class="cover_img" src="../assets/images/img_5.jpg">
+    </div>
+      <div class="header_user_info">
+        <div class="function">
+          <span>
+            <button class="icon"><i class="fi fi-rs-bell"> </i></button>
+            <button class="icon" (click)="onWriting()"><i class="fi fi-rr-edit"></i></button>
+          </span>
+        </div>
+        <img class="profile_img" src="../assets/images/profile.png">
+          <div class ="info_wrap">
+            <div class ="info_box">
+              <span class="name_box"> {{userName}} </span>
+              <span class="role_box">(Doctor)</span>
+            </div>
+          </div>
+      </div>
+  </div>
+
+<div class ="contents_wrap">
+  <div class = "post">
+    <app-post></app-post>
+  </div>
+  <div class = "online_list">
+    <div class ="label">Recent Comments</div>
+      <div class ="user_list">
+        <!-- <div *ngFor="let user of user_list;" class="user"> -->
+        <div class="recent_cmt_wrap">
+          <div class="user">
+            <span class="recent_cmt_user_img"> <img src="../assets/images/profile.png" width="45px"> </span> {{userName}} (Doctor) 
+          </div>
+          <div class="recent_cmt">
+            최신 댓글
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>

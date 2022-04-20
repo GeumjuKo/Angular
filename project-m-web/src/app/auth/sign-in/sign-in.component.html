@@ -1,0 +1,25 @@
+<div class ="login_container">
+    <form (submit)="onSignIn(signInForm)" #signInForm="ngForm" class="form">
+        <div class ="logo">
+            <!-- <img alt ="logo" src="./assets/images/logo.png"> -->
+        </div>
+        <div class ="post_title">
+           <h2 class="title">Welcome this Page !</h2><span class="small_text">User Login</span>
+         </div>
+       
+        <div class="input_email">
+            <!-- <label for="email"><b>Email address</b></label> -->
+            <input id ="email" style="color:black" name="email" ngModel type="email" #emailInput="ngModel" [(ngModel)]="emailAddress" email placeholder="Enter Username" required>
+        </div>
+        <div class="input_password">
+            <!-- <label for="password"><b>Password</b></label> -->
+            <input id ="password" style="color:black" [(ngModel)]="password" ngModel type="password" minlength="8" #passwordInput="ngModel" required name="password" placeholder="Enter Password" >
+        </div>
+        <div class ="login_button">
+            <button type="submit">Login</button>
+        </div>
+    </form>  
+    <div class ="signup_button">
+        <button type="button" (click)="OnSignUp();">Sign Up</button> 
+    </div>
+</div>

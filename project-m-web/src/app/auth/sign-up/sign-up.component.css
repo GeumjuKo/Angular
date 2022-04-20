@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'IM_Hyemin-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KOTRA_GOTHIC';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'paybooc-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'paybooc-ExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.signup_container{
+  /* left: 50%;
+  top: 50%; */
+  /* position: absolute; */
+  /* transform: translate(-50%,-50%); */
+  text-align: center;
+  margin: 150px auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  height: 350px;
+  width: 900px;
+  border-radius: 20px;
+  /* box-shadow: 2px 2px 10px rgb(210, 228, 255); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.11);
+
+}
+
+.logo {
+  width: 40%;
+  justify-content: center;
+  margin-right: 20px;
+  margin-top: 150px; /*로고 없을 때*/
+  /* height: 100%; 
+  overflow: visible;
+  margin: -10px auto;
+  margin: -20px auto 20px auto ; */
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+.guide_msg{
+  font-size: 25px;
+  color: rgb(0, 247, 255);
+  /* text-align: center; */
+  font-family: 'paybooc-ExtraBold';
+}
+.login_link{
+  font-size: 12px;
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+.form{
+  margin-top: -35px;
+  padding-top: 30px;
+  /* padding-top: 100px; */
+  
+  width: 50%;
+  height: 400px;
+  font-family: 'paybooc-Bold';
+  font-weight: bold;
+  /* box-shadow: 2px 2px 10px rgb(210, 228, 255); */
+  border: 1px solid rgb(0, 247, 255);
+  border-radius: 30px;
+  /* background-color: rgb(210, 228, 255); */
+  /* height: 100%; */
+  /* float : left; */
+  /* text-align: left; */
+}
+
+.label{
+  font-size: 13.5px;
+  text-align: left;
+  margin-left:110px;
+  color: rgb(0, 247, 255);
+}
+
+.input_name, .input_gender,.input_email,.input_mobileNo, .input_psw
+{
+  margin-bottom:10px;
+}
+#fname, #lname{
+  /* border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa); */
+  /* border-left-width:0;
+  border-right-width:0;
+  border-top-width:0;
+  border-bottom-width:1;
+  border-image-slice: 1; */
+  border-style:hidden;
+  width: 100px;
+  margin: 8px;
+  padding: 6px;
+  border-radius: 5px;
+  background-color:rgba(255, 255, 255);
+}
+#gender,#email,#mobileNo,#mobileNo,#psw,#vericode{
+  /* font-family: 'KOTRA_GOTHIC';
+  font-weight: bold; */
+  width: 216px;
+  /* border-left-width:0;
+  border-right-width:0;
+  border-top-width:0;
+  border-bottom-width:1; */
+  /* border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa); */
+  /* border-image-slice: 1; */
+  border-radius: 5px;
+  background-color:rgba(255, 255, 255);
+  border-style:hidden;
+  
+  /* box-shadow: 2px 2px 10px rgb(210, 228, 255); */
+  padding: 6px;
+  margin: 5px;
+}
+
+.verification{
+  margin: auto;
+  font-family: 'paybooc-Bold';
+  color: rgb(0, 247, 255);
+}
+button{
+  border-radius: 100px ;
+  border-style: hidden;
+  /* background: linear-gradient(90deg, #53a3ff, #74b0ff, #b0d5ff); */
+  background-color: rgb(0, 247, 255);
+  padding: 5px;
+  width: 250px;
+  color: white;
+  font-style: bold;
+  cursor: pointer;
+}
+a{color:lightyellow}
+a:visited{color:rgb(210, 235, 255)}
+
+/* input:invalid{
+  background-color:rgba(255, 229, 229, 0.856)
+} */

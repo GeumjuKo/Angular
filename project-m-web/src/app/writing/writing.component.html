@@ -1,0 +1,68 @@
+<div class="menu_bar"> 
+  <button class="back_btn" onclick="history.back()"><i class="fi fi-br-angle-double-small-left"> Back</i> </button>
+</div>
+<form [formGroup]="WritingForm" (ngSubmit)="submit()">
+  <div class="contents_wrap">
+    <div class="main">
+      
+    <div class="user_info">
+      <div class="sec1">
+        <img class="profile_img" src = "{{prof_img}}">
+        <div class="sec2">
+          <span class="user_name">{{name}}</span>
+          <span class="user_role">{{role}}</span>
+      </div>
+      </div>
+    </div>
+    <hr>
+
+      <div class="category">
+        <select [(ngModel)]="selectedCategory" formControlName="category" id="category" name="category"> 
+          <option [selected]="true" hidden [ngValue]="undefined">CATEGORY</option>
+          <option *ngFor="let ct of categories" [ngValue]="ct.category">{{ct.category}}</option>
+        </select>
+      </div>
+
+    <hr>
+    <div class="title">
+      <input id="title" formControlName="title" type="text" name="title" placeholder="제목을 입력하세요." maxlength=20 required  >
+    </div>
+    <hr>
+    
+    <div class="image">
+
+        <div *ngIf="f['file'].touched && f['file'].invalid" >
+          <span *ngIf="f['file'].errors['required']">File is required.</span>
+        </div>
+
+      
+      <div class="image_privew" >
+        <span class="iiii" *ngFor = "let imageSrc of imageSrcList">
+          <img [src]="imageSrc" *ngIf="imageSrc">
+        </span>
+      </div>
+      <!-- 이미지 추가할 수 있는 기능 -->
+      <!-- <label class="input_file_button" for="input_file">
+        +
+      </label> -->
+      
+      <input type="file" formControlName="file" multiple (change)="readURL($event);" accept=".jpg, .png, .jpeg, .jfif" style="display:none"  class="fileInput" #fileInput>
+      <button type="button" id="image_plus_button" (click)="fileInput.click();"> + </button>
+
+      <br>
+    </div> 
+    <hr>
+    <div class="diagnosis">
+      <input id="diagnosis" formControlName="diagnosis" type="text" name="diagnosis" placeholder="진단명" maxlength=20 required>
+    </div>
+    <hr>
+    <div class="contents">
+      <i style="color: #00f7ff; font-weight: bold; font-size: 20px;">feed text</i>
+      <textarea formControlName="description"  placeholder="내용을 입력하세요."></textarea>
+    </div>
+    <div class="post_button">
+      <button id="post_button"><i class="fi fi-rs-pencil"> Post</i></button> 
+    </div>
+  </div>
+  </div>
+</form>
