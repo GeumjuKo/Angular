@@ -110,7 +110,7 @@ export class WritingComponent implements OnInit {
   }
   submit(){
     console.log('writingform', this.WritingForm.value);
-    this.http.post('https://ssokuycqjh.execute-api.ap-northeast-2.amazonaws.com/post', this.WritingForm.value)
+    this.http.post('https://ssokuycqjh.execute-api.ap-northeast-2.amazonaws.com/post',this.WritingForm.value,{headers:{'Contents-Type':'multipart/form-data;'}})
     .subscribe(res => {
       console.log(res);
       this.router.navigate(["dashboard"])
