@@ -1,7 +1,7 @@
 <div class="menu_bar"> 
   <button class="back_btn" onclick="history.back()"><i class="fi fi-br-angle-double-small-left"> Back</i> </button>
 </div>
-<form [formGroup]="WritingForm" (ngSubmit)="submit()">
+<form [formGroup]="WritingForm" (ngSubmit)="submit()" enctype="multipart/form-data">
   <div class="contents_wrap">
     <div class="main">
       
